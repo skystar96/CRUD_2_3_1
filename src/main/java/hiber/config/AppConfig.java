@@ -48,7 +48,7 @@ public class AppConfig {
       props.put("hibernate.dialect", env.getProperty("hibernate.dialect"));
       props.put("hibernate.current_session_context_class", "thread");
       bean.setDataSource(getDataSource());
-      bean.setPackagesToScan("web.models");
+      bean.setPackagesToScan("hiber.model");
       bean.setJpaVendorAdapter(vendorAdapter);
       bean.setJpaProperties(props);
       return bean;
