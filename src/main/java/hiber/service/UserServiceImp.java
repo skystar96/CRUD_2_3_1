@@ -41,7 +41,7 @@ public class UserServiceImp implements UserService {
       return userDao.editUser(id, updated);
    }
 
-   @Transactional(readOnly = true)
+   @Transactional
    @Override
    public List<User> listUsers() {
       return userDao.listUsers();

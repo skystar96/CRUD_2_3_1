@@ -2,7 +2,6 @@ package hiber.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
@@ -23,7 +22,7 @@ import java.util.Properties;
 @EnableTransactionManagement
 public class AppConfig {
 
-   private final Environment env;
+   private Environment env;
    @Autowired
    public AppConfig(Environment env) {
       this.env = env;
